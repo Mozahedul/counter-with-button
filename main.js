@@ -10,6 +10,10 @@ btnAdd.addEventListener("click", function () {
     val = 20;
   }
   document.getElementById("showData").innerHTML = val;
+  console.log(val);
+  if (val > 0 && val < 20) {
+    document.getElementById("warning").innerHTML = "";
+  }
 });
 
 btnSub.addEventListener("click", function () {
@@ -19,5 +23,10 @@ btnSub.addEventListener("click", function () {
       "Negative value is not accepted";
     val = 0;
   }
+
   document.getElementById("showData").innerHTML = val;
+  console.log(val);
+  if (val > 0 && val < 20) {
+    document.getElementById("warning").innerHTML = "";
+  }
 });
